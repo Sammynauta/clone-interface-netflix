@@ -1,0 +1,160 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+    --branco: #ffffff;
+    --cinza: rgb(218, 211, 211);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*elmentos base*/
+body {
+    background: var(--preta);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--branco);
+
+}
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: transparent;
+}
+
+header .secundaria {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.0rem;
+    margin-left: 15px;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--branco);
+    margin-left: 25px;
+    font-size: 1.4rem;
+}
+
+header nav a:hover{
+    color: var(--cinza);
+   
+}
+
+.carrosel-filmes a{
+    text-decoration: none;
+    color: var(--branco);
+    margin-left: 25px;
+    font-size: 1.8rem;
+}
+
+/*filme principal*/
+.filme-principal .container{
+    width: 70%;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 4.2rem;
+    margin-bottom: 0.8rem;
+    margin-left: 4%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+.filme-principal {
+    font-size: 1.2rem;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0.50)100%), url('/img/suits2.jpg');
+
+    height: 1000px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    margin-left: 3%;
+}
+
+.botoes > button {
+    background: var(--branco);
+    color: var(--preta);
+    border-radius: 0.4rem;
+    margin: 0.8rem;
+    padding: 1.0rem 1.0rem;
+    border: 0.1rem solid var(--branco);
+    font-size: 1.6rem;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 8%;
+  }
+  
+.botoes > button.outlined {
+    background: linear-gradient(rgba(120, 120, 120, 0.5), rgba(120, 120, 120, 0.5)100%);
+    color: var(--branco);
+    border: 0.1rem solid var(--cinza);
+  }
+  
+.botoes > button:hover {
+    background: transparent;
+    color: var(--branco);
+    border: 0.1rem solid var(--branco);
+  }
+
+  .box-filme {
+      height: 100%;
+      width: 100%;
+      display: block;
+  }
+  @media screen and (max-width: 800px) {
+    html {
+      font-size: 75%;
+    }
+   }
+
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 65%;
+    }
+   }
+   @media screen and (max-width: 630px) {
+    html {
+      font-size: 60%;
+    }
+   }
+   @media  screen and (max-width: 540px) {
+    html {
+      font-size: 55%;
+      }
+    }
+    @media screen and (max-width: 477px) {
+      html {
+        font-size: 45%;
+        }
+      }
+      @media screen and (max-width: 435px) {
+        html {
+          font-size: 40%;
+          }
+        }
+        @media screen and (max-width: 375px) {
+          html {
+            font-size: 38%;
+            }
+          }
